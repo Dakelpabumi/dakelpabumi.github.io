@@ -8,6 +8,13 @@ body {
     background-color: #2D4263;
 }
 
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
 .wrapper {
     display: flex;
     background-color: #ECDBBA;
