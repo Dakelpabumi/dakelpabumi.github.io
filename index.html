@@ -5,49 +5,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
-<body>
-    
+<body class="bg-light text-dark">
+    <!-- Header -->       
+    <div class="container-fluid px-0">
 
-    <div class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"><a href="#" id="clickme">CLCIK ME</a></div>
-                <div class="col-md-6">
-                        <div class="playground">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem nesciunt quas tempora fugiat rem exercitationem nisi beatae, ratione, ut minima nulla optio vero adipisci possimus, nobis eos dicta placeat.</p>
-                        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <div class="container-fluid nav-logo">
+                <a class="navbar-brand" href="/">
+                    <!-- From Uiverse.io by Smit-Prajapati --> 
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;.Kevx&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;.kevx&nbsp;</span>
+                    </button>
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container px-3">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+        <!-- End Navbar -->
+                
+        <!-- Hero -->
+        <header class="bg-light py-5">
+            <div class="container px-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2">
+                    <div class="my-5">
+                        <h2 class="text-center fw-bold mb-2">Hi! I'm Kevin,</h2>
+                        <h2 class="text-primary text-center fw-bold mb-2">a Front-end Web Developer | Freelancer</h2>
+                        <p class="lead text-muted text-center mb-4">
+                            Hello! I'm a passionate developer specializing in front-end technologies. I love creating elegant and efficient solutions for web applications.
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                            <a class="btn btn-outline-primary btn-large text-uppercase" href="assets\My Resume.docx" download="assets\My Resume.docx">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 justify-content-center ">
+                    <img class="img-fluid rounded-5 my-5" src="assets\rM1-YNuX.jpg" alt="Hero Image">
+                </div>
+            </div>
+            </div>
+        </header>
+        <!-- End Hero -->
+
+        <main>
+            <!-- About -->
+            <section id="about" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                    <h2 class="fw-bold">About</h2>
+                    <p class="lead text-muted mb-5">
+                        "Dedicated and adaptable professional with a background in marine transportation, now pursuing a career in technology. Recently completed CS50x, showcasing a strong commitment to learning and a passion for software development. Skilled in problem-solving, critical thinking, and teamwork, eager to contribute to a dynamic tech environment."
+                    </p>
+                    </div>
+                    
+                <div class="tech-container">
+                    <div class="tech-stack-container mb-5">
+                        <div class="tech-stack">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />        
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />        
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />        
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />        
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />      
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card text-center border-0 shadow p-4">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="material-icons-outlined text-primary" style="font-size: 3rem;">Design</span>
+                                </div>
+                                <h5>Design</h5>
+                                <p class="text-muted mb-0">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, totam ipsa quia quam nisi architecto cumque voluptatibus fugit. Soluta asperiores quaerat possimus, sunt reiciendis sint provident maxime odit!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card text-center border-0 shadow p-4">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="material-icons-outlined text-primary" style="font-size: 3rem;">code</span>
+                                </div>
+                                <h5>Development</h5>
+                                <p class="text-muted mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam impedit, tempore veritatis doloribus sint. Doloribus earum beatae voluptas, at nihil temporibus, accusamus ex dolores dicta vero et illum voluptate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card text-center border-0 shadow p-4">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="material-icons-outlined text-primary" style="font-size: 3rem;">settings</span>
+                                </div>
+                                <h5>Launch & Maintenance</h5>
+                                <p class="text-muted mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id similique nisi consequatur minus laborum quas enim, accusamus expedita molestias fuga labore quo vitae odit sint non aliquam quidem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+            <!-- End About -->
+
+            <hr>
+
+            <!-- Projects -->
+            <section id="projects" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                    <h2 class="fw-bold">Projects</h2>
+                    <p class="lead text-muted mb-5">View some of my latest projects</p>
+                    </div>
+                </div>
+                <div class="container mb-5 cards">
+                    <div class="row justify-content-evenly">
+                        <div class="card col-lg-6 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                            <div class="card__content">
+                            <p class="card__title">Project Title</p>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </div>
+                        </div>         
+                        <div class="card col-lg-6 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                            <div class="card__content">
+                            <p class="card__title">Project Title</p>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </div>
+                        </div>    
+                        <div class="card col-lg-6 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                            <div class="card__content">
+                            <p class="card__title">Project Title</p>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </div>
+                        </div>  
+                        <div class="card col-lg-6 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                            <div class="card__content">
+                            <p class="card__title">Project Title</p>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </div>
+                        </div>                  
+                    </div>      
+                </div>
+            </section>
+            <!-- End Projects -->
+
+            <hr>
+
+            <!-- Testimonials -->
+            <section id="testimonials" class="text-center py-5 bg-light">
+                    <div class="container py-5">
+                        <h2 class="fw-bold display-5">What Clients Say</h2>
+                        <p class="lead text-muted mb-5">Hear from some of our happy clients</p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 mb-4">
+                                <div class="card border-0 shadow-lg p-4">
+                                    <div class="card-body">
+                                        <p class="fs-5 fst-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis elit ut tellus tempus pharetra."</p>
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <img class="rounded-circle me-3" src="images/user1.png" alt="User 1" width="60" height="60">
+                                            <div class="fw-bold">
+                                                Amy Jones <br>
+                                                <span class="text-primary">CEO, Company 1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="card border-0 shadow-lg p-4">
+                                    <div class="card-body">
+                                        <p class="fs-5 fst-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis elit ut tellus tempus pharetra."</p>
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <img class="rounded-circle me-3" src="images/user2.png" alt="User 2" width="60" height="60">
+                                            <div class="fw-bold">
+                                                James Smith <br>
+                                                <span class="text-primary">CEO, Company 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="card border-0 shadow-lg p-4">
+                                    <div class="card-body">
+                                        <p class="fs-5 fst-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis elit ut tellus tempus pharetra."</p>
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <img class="rounded-circle me-3" src="images/user3.png" alt="User 3" width="60" height="60">
+                                            <div class="fw-bold">
+                                                Mary Richards <br>
+                                                <span class="text-primary">CEO, Company 3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- End Testimonials -->
+
+            <hr>
+
+            <!-- Contact -->
+            <section id="contact" class="text-center py-5 bg-light">
+                <div class="container py-5">
+                    <h2 class="fw-bold display-5">Get in Touch</h2>
+                    <p class="lead text-muted mb-5">Looking for a full-stack web developer? Let's connect!</p>
+                    <div class="row justify-content-center  align-items-center">
+                        <div class="col-xl-5 col-xxl-6 mb-5 contact-form order-2">
+                                <span class="heading">Contact Me</span>
+                                <form>
+                                  <label for="name">Name:</label>
+                                  <input type="text" required="">
+                                  <label for="email">Email:</label>
+                                  <input type="email" id="email" name="email" required="">
+                                  <label for="message">Message:</label>
+                                  <textarea id="message" name="message" required=""></textarea>
+                                  <button type="submit">Submit</button>
+                                </form>
+                        </div>
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <img src="assets\Profile-removebg.png" alt="Profile Pic">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>            
+            <!-- End Contact -->
+        </main>
     </div>
 
+<hr>
 
-    
-
-    
-
+<!-- Footer -->
+<footer id="footer">
+    <!-- From Uiverse.io by ahmed150up2 --> 
+    <div class="card container">
+        <a class="social-link1" href="https://github.com/Dakelpabumi" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+        </a>
+        <a class="social-link2" href="https://www.linkedin.com/in/dakelpabumi/" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>          </a>
+        <a class="social-link3" href="https://www.facebook.com/Dakelpabumi" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+        </a>
+    </div>             
+</footer>
+<!-- End Footer -->
+                         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    
-    <script>
-        $(document).ready(function(){
-            
-            $('#clickme').click(function(me){
-                me.preventDefault();
-               
-                $('.playground').toggle('hide'); 
-            });
-        });
-
-        
-    </script>
-    
 </body>
 </html>

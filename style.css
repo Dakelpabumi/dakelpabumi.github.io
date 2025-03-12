@@ -2,4 +2,242 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", "sans-serif";
+}
+
+nav .nav-logo {
+  /* From Uiverse.io by satyamchaudharydev */
+  /* === removing default button style ===*/
+  /* button styling */
+  /* this is the text, when you hover on button */
+  /* hover */
+}
+nav .nav-logo .button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+nav .nav-logo .button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+nav .nav-logo .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+nav .nav-logo .button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+#about .tech-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+#about #three-canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Puts the 3D model on top */
+  pointer-events: none; /* Prevents interaction blocking */
+  width: 100%;
+  height: 100%;
+}
+#about .tech-stack-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  position: relative;
+}
+#about .tech-stack {
+  display: flex;
+  gap: 120px;
+  animation: scroll 30s linear infinite;
+}
+#about .tech-stack img {
+  width: 50px; /* Adjust icon size */
+  height: auto;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+}
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#projects .row {
+  gap: 1rem;
+}
+#projects .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#projects .card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#projects .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+#projects .card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#projects .card:hover .card__content {
+  transform: rotateX(0deg);
+}
+#projects .card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+#projects .card:hover svg {
+  scale: 0;
+}
+#projects .card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+#contact .container .row .contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact .container .row .contact-form .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+#contact .container .row .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .row .contact-form label {
+  margin-bottom: 10px;
+}
+#contact .container .row .contact-form textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+}
+#contact .container .row .contact-form input, #contact .container .row .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#contact .container .row .contact-form input:focus, #contact .container .row .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+#contact .container .row .contact-form button[type=submit] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#contact .container .row .contact-form button[type=submit]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1e22;
+  padding: 20px 0;
+}
+#footer .card {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: auto;
+  background-color: #1a1e22;
+}
+#footer .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #333;
+  transition: transform 0.3s, background-color 0.3s;
+}
+#footer .social-link svg {
+  width: auto;
+  height: auto;
+  fill: white;
+}
+#footer .social-link:hover {
+  transform: scale(1.2);
+}
+#footer .social-link1:hover {
+  background-color: #1877f2;
+}
+#footer .social-link2:hover {
+  background-color: #0a66c2;
+}
+#footer .social-link3:hover {
+  background-color: #1da1f2;
 }/*# sourceMappingURL=style.css.map */
